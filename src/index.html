@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;0,700;1,400&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/d6cd3c7604.js" crossorigin="anonymous"></script>
+    <title>My Todo List</title>
+</head>
+<body>
+    <section class="container">
+        <!-- this is the head section -->
+        <div class="header box">
+            <h1>Today's To Do</h1>
+            <i class="fa-solid fa-rotate"></i>
+        </div>
+
+        <!-- Add to your list in this form -->
+        <div class="item-list">
+        <form action="" id="add-form">
+            <div class="new-item">
+            <input type="text" 
+            placeholder="Add to your list..."
+            name="add-item"
+            id="add-items">
+            <i class="fas fa-level-down-alt"></i>
+            </div>
+        
+
+        <!-- list items created dynamically -->
+        <div class="todos-list"></div>
+
+        <!-- clear button -->
+        <button type="submit" class="clear-btn">Clear all completed</button>
+        </form>
+
+        </div>
+</body>
+</html>
