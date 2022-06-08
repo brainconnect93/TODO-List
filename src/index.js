@@ -4,23 +4,28 @@ const todoList = document.querySelector('.todos-list');
 
 const listArray = [
   {
-    description: 'Wash the dishes',
+    description: 'Watch Champions league final',
     completed: false,
     index: 0,
   },
   {
-    description: 'Finish coding assignment',
+    description: 'Go to Gym by 5:30pm',
     completed: false,
     index: 1,
   },
   {
-    description: 'Grocery shopping',
+    description: 'Read more about Javascript',
     completed: false,
     index: 2,
   },
+  {
+    description: 'Eat and Sleep',
+    completed: false,
+    index: 3,
+  },
 ];
 
-const displayToDo = () => {
+const addToDo = () => {
   list.innerHTML = '';
   for (let i = 0; i < listArray.length; i++) {
     list.innerHTML += `
@@ -30,11 +35,11 @@ const displayToDo = () => {
           <p>${listArray[i].description}</p>
         </div>
         <div class="right">
-          <i class="fa fa-ellipsis-v" aria-hidden="true"></i>
+          <i class="fa fa-ellipsis-v"></i>
         </div>
       </div>
   `;
   }
 };
 
-displayToDo();
+addToDo();

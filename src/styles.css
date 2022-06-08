@@ -78,6 +78,38 @@ html {
   margin-right: 5px;
 }
 
+/* dynamic display styling */
+
+.todos-content {
+  height: 30px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 12px;
+  width: 80%;
+  margin: 1px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos-content .todos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.todos p {
+    font-family: 'Playfair Display', sans-serif;
+    font-weight: 400;
+    font-style: italic;
+    font-size: 1.1em;
+}
+
+.fa {
+    margin-right: 5px;
+    color: #4e4e4e;
+}
+
 /* the clear button */
 
 .clear-btn {
