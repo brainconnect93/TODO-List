@@ -1,3 +1,5 @@
+/* eslint-disable no-plusplus */
+
 import './styles.css';
 
 const todoList = document.querySelector('.todos-list');
