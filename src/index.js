@@ -1,8 +1,8 @@
-import "./styles.css";
+import './styles.css';
 
 const todoList = document.querySelector('.todos-list');
 
-const listArray = [
+const todoArray = [
   {
     description: 'Watch Champions league final',
     completed: false,
@@ -14,7 +14,7 @@ const listArray = [
     index: 1,
   },
   {
-    description: 'Read more about Javascript',
+    description: 'Read more on Javascript',
     completed: false,
     index: 2,
   },
@@ -26,13 +26,13 @@ const listArray = [
 ];
 
 const addToDo = () => {
-  list.innerHTML = '';
-  for (let i = 0; i < listArray.length; i++) {
-    list.innerHTML += `
-      <div class="list-content">
-        <div class="left">
+  todoList.innerHTML = '';
+  for (let i = 0; i < todoArray.length; i++) {
+    todoList.innerHTML += `
+      <div class="todos-content">
+        <div class="todos">
           <input type="checkbox" name="" id="">
-          <p>${listArray[i].description}</p>
+          <p>${todoArray[i].description}</p>
         </div>
         <div class="right">
           <i class="fa fa-ellipsis-v"></i>
