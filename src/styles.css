@@ -11,7 +11,7 @@ html {
   font-family: 'Playfair Display', sans-serif;
 }
 
- /* the whole container of the to do */
+/* the whole container of the to do */
 .container {
   text-align: center;
   width: 50%;
@@ -27,7 +27,7 @@ html {
 }
 
 .header {
-    /* border: 1px solid red; */
+  /* border: 1px solid red; */
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -66,7 +66,7 @@ html {
   outline: none;
   color: #000;
 }
-  
+
 .new-item input::placeholder {
   font-family: 'playfair Display', sans-serif;
   font-size: 1.2em;
