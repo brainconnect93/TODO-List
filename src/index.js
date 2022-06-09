@@ -1,5 +1,3 @@
-/* eslint disable no-plusplus */
-
 import './styles.css';
 
 const todoList = document.querySelector('.todos-list');
@@ -29,7 +27,7 @@ const todoArray = [
 
 const addToDo = () => {
   todoList.innerHTML = '';
-  for (let i = 0; i < todoArray.length; i++) {
+  for (let i = 0; i < todoArray.length; i += 1) {
     todoList.innerHTML += `
       <div class="todos-content">
         <div class="todos">
