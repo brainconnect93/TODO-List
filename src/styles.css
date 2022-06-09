@@ -1,0 +1,128 @@
+body {
+  background-color: #e4e9fd;
+  background-image: -webkit-linear-gradient(65deg, #456c69 40%, #b8f0b3 60%);
+  height: 100vh;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: 'Playfair Display', sans-serif;
+}
+
+/* the whole container of the to do */
+.container {
+  text-align: center;
+  width: 50%;
+  margin: 30px 25%;
+  padding: 20px 0;
+}
+
+.box {
+  width: 80%;
+  margin: 50px 10% 0 10%;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+}
+
+.header {
+  /* border: 1px solid red; */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 44px;
+  padding: 12px;
+}
+
+.header h1 {
+  color: #4e4e4e;
+  font-weight: 700;
+  font-style: italic;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 30px;
+}
+
+.fa-solid {
+  color: #4e4e4e;
+  cursor: pointer;
+}
+
+/* the form section of the to do list */
+
+.new-item {
+  display: flex;
+  justify-content: space-between;
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  width: 80%;
+  margin: 1px 10%;
+}
+
+.new-item input {
+  border-color: transparent;
+  background-color: inherit;
+  outline: none;
+  color: #000;
+}
+
+.new-item input::placeholder {
+  font-family: 'playfair Display', sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+}
+
+.fas {
+  transform: rotate(90deg);
+  color: #4e4e4e;
+  margin-right: 5px;
+}
+
+/* dynamic display styling */
+
+.todos-content {
+  height: 30px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+  border-radius: 5px;
+  padding: 12px;
+  width: 80%;
+  margin: 1px 10%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.todos-content .todos {
+  display: flex;
+  gap: 15px;
+  align-items: center;
+}
+
+.todos p {
+  font-family: 'Playfair Display', sans-serif;
+  font-weight: 400;
+  font-style: italic;
+  font-size: 1.1em;
+}
+
+.fa {
+  margin-right: 5px;
+  color: #4e4e4e;
+}
+
+/* the clear button */
+
+.clear-btn {
+  border-radius: 5px;
+  box-shadow: 5px 5px 15px 12px rgba(0, 0, 0, 0.3);
+  padding: 12px;
+  width: 83%;
+  margin: 1px 10%;
+  background: inherit;
+  border-color: transparent;
+  font-family: 'Playfair Display', sans-serif;
+  font-size: 1.2em;
+  color: #fff;
+  cursor: pointer;
+}
