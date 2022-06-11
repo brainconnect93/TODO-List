@@ -37,7 +37,7 @@ class ToDoList {
         todoList.innerHTML += `
             <div class="todos-content">
               <div class="todos">
-                <input type="checkbox" name="" id="">
+                <input type="checkbox" name="" id="${i}">
                 <p>${this.tasks[i].description}</p>
               </div>
               <div class="right">
@@ -64,8 +64,15 @@ class ToDoList {
           inputField.classList.toggle('line-through');
           trashCan.classList.toggle('d-none');
           ellipsis.classList.toggle('d-none');
+          this.markCompleted(parseInt(event.target.id));
+
         });
       });
+    }
+
+    markCompleted = (index) => {
+      this.tasks[index].completed = !this.tasks[index].completed;
+      this.populateLocalStorage();
     }
 
     populateLocalStorage = () => {
