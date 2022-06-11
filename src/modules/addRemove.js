@@ -64,8 +64,7 @@ class ToDoList {
           inputField.classList.toggle('line-through');
           trashCan.classList.toggle('d-none');
           ellipsis.classList.toggle('d-none');
-          this.markCompleted(parseInt(event.target.id));
-
+          this.markCompleted(parseInt(event.target.id, 10));
         });
       });
     }

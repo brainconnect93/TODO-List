@@ -1,6 +1,6 @@
 import './styles.css';
 import ToDoList from './modules/addRemove.js';
-import {clearAll, cleartodos} from './modules/clear.js';
+import { clearAll, cleartodos } from './modules/clear.js';
 
 const taskstore = new ToDoList();
 

@@ -5,5 +5,5 @@ const cleartodos = (taskstore) => {
   taskstore.updateIndex();
   taskstore.populateLocalStorage();
   taskstore.displayTodos();
-}
-export {clearAll, cleartodos};
+};
+export { clearAll, cleartodos };
