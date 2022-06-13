@@ -5,11 +5,17 @@
 > Create the to-do List project with webpack. Ultimately, the user should be able to add an item and delete the item 
 
 
+## Live Demo
+
+[Link to live demo](https://brainconnect93.github.io/TODO-List/)
+
+
 ## Built With
 
 - HTML
 - CSS
-- Javascript
+- Javascript (ES6)
+- Webpack, and served by a Webpack dev server
 
 ## Getting Started
 
