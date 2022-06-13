@@ -111,6 +111,19 @@ html {
   color: #4e4e4e;
 }
 
+.d-none {
+  display: none;
+}
+  
+.fa-trash-alt {
+  transform: rotate(0deg);
+}
+  
+.line-through {
+  text-decoration: line-through;
+  color: red;
+}
+
 /* the clear button */
 
 .clear-btn {
@@ -125,17 +138,4 @@ html {
   font-size: 1.2em;
   color: #fff;
   cursor: pointer;
-}
-
-.d-none {
-  display: none;
-}
-
-.fa-trash-alt {
-  transform: rotate(0deg);
-}
-
-.line-through {
-  text-decoration: line-through;
-  color: red;
 }
