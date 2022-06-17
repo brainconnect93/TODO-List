@@ -38,7 +38,7 @@ To get a local copy up and running follow these simple example steps.
 - Twitter: [@brainconnect0](https://twitter.com/brainconnect0)
 - LinkedIn: [Afolabi Akorede](https://linkedin.com/in/brainconnect93)
 
-## Colabulator
+## Collaborator
 
 👤 **Ashenafi Andashaw**
 
