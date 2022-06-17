@@ -114,11 +114,11 @@ html {
 .d-none {
   display: none;
 }
-  
+
 .fa-trash-alt {
   transform: rotate(0deg);
 }
-  
+
 .line-through {
   text-decoration: line-through;
   color: red;

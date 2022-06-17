@@ -1,6 +1,7 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # TO DO List
+# Unit testing using jest 
 
 > Create the to-do List project with webpack. Ultimately, the user should be able to add an item and delete the item 
 
@@ -36,6 +37,14 @@ To get a local copy up and running follow these simple example steps.
 - GitHub: [@brainconnect93](https://github.com/brainconnect93)
 - Twitter: [@brainconnect0](https://twitter.com/brainconnect0)
 - LinkedIn: [Afolabi Akorede](https://linkedin.com/in/brainconnect93)
+
+## Collaborator
+
+👤 **Ashenafi Andashaw**
+
+- GitHub: [@Ashe546](https://github.com/Ashe546)
+- Twitter: [@ashenafi432](https://twitter.com/ashenafi546)
+- LinkedIn: [Ashenafi Endashaw](https://www.linkedin.com/in/ashenafi-endashaw-7a50b318a/)
 
 ## 🤝 Contributing
 
