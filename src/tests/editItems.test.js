@@ -44,7 +44,7 @@ describe('mark complete todoList', () => {
 describe('clear completed todoList', () => {
   test('clear all todos', () => {
     let list = document.querySelectorAll('.todos-list');
-    
+
     taskstore.addTask('go for code and coffee');
     taskstore.addTask('taking nap');
     taskstore.addTask('take dinner very early');
@@ -53,7 +53,7 @@ describe('clear completed todoList', () => {
     taskstore.markCompleted(4);
     cleartodos(taskstore);
     list = document.querySelectorAll('.todos-list .todos-content');
-    
+
     expect(list.length).toBe(0);
   });
 });
