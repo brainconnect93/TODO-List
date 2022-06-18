@@ -21,6 +21,26 @@ class ToDoList {
       this.displayTodos();
     }
 
+    // to edit task in the todo list items
+
+    editTask = ({ id, data }) => {
+      this.tasks = this.getTasks().map((task) => {
+        if (task.index === id && data !== '') task.description = data;
+        return task;
+      });
+      this.populateLocalStorage();
+      this.displayTodos();
+    }
+
+    regenerateTaskIds = () => {
+      this.tasks = this.getTasks().map((task, index) => {
+        task.index = index + 1;
+        return task;
+      });
+    }
+
+    getTasks = () => this.tasks
+
     updateIndex = () => {
       this.tasks = this.tasks.map((task, index) => {
         task.index = index + 1;
@@ -37,7 +57,7 @@ class ToDoList {
         todoList.innerHTML += `
             <div class="todos-content">
               <div class="todos">
-                <input type="checkbox" name="" id="${i}">
+                <input type="checkbox" name="" id="${i}" ${this.tasks[i].completed ? 'checked' : ''}>
                 <p>${this.tasks[i].description}</p>
               </div>
               <div class="right">
@@ -72,6 +92,7 @@ class ToDoList {
     markCompleted = (index) => {
       this.tasks[index].completed = !this.tasks[index].completed;
       this.populateLocalStorage();
+      this.displayTodos();
     }
 
     populateLocalStorage = () => {
