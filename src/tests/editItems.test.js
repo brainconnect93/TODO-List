@@ -3,6 +3,7 @@
  */
 
 import ToDoList from '../modules/addRemove.js';
+import { cleartodos } from '../modules/clear.js';
 
 const taskstore = new ToDoList();
 document.body.innerHTML = '<div class="todos-list"></div>';
@@ -37,5 +38,22 @@ describe('mark complete todoList', () => {
 
     expect(completeOne).toBe(true);
     expect(completeTwo).toBe(true);
+  });
+});
+
+describe('clear completed todoList', () => {
+  test('clear all todos', () => {
+    let list = document.querySelectorAll('.todos-list');
+    
+    taskstore.addTask('go for code and coffee');
+    taskstore.addTask('taking nap');
+    taskstore.addTask('take dinner very early');
+    taskstore.markCompleted(2);
+    taskstore.markCompleted(3);
+    taskstore.markCompleted(4);
+    cleartodos(taskstore);
+    list = document.querySelectorAll('.todos-list .todos-content');
+    
+    expect(list.length).toBe(0);
   });
 });
