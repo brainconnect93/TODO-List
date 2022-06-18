@@ -27,3 +27,17 @@
     });
 })
 
+describe('mark complete todoList', () => {
+    test('test complete todos', () => {
+      taskstore.markCompleted(0);
+      taskstore.markCompleted(1);
+      taskstore.displayTodos();
+  
+      const completeOne = document.querySelectorAll('.todos-list .todos input[type=checkbox]')[0].checked;
+      const completeTwo = document.querySelectorAll('.todos-list .todos input[type=checkbox]')[1].checked;
+  
+      expect(completeOne).toBe(true);
+      expect(completeTwo).toBe(true);
+    });
+});
+
