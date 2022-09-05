@@ -1,8 +1,6 @@
 ![](https://img.shields.io/badge/Microverse-blueviolet)
 
 # TO DO List
-# Unit testing using jest 
-
 > Create the to-do List project with webpack. Ultimately, the user should be able to add an item and delete the item 
 
 
