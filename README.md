@@ -3,6 +3,10 @@
 # TO DO List
 > Create the to-do List project with webpack. Ultimately, the user should be able to add an item and delete the item 
 
+### Todo List Screenshot
+> ![todo](https://user-images.githubusercontent.com/78634841/188438170-beb55201-ee62-4139-9a9c-66e1d53c7705.png)
+![todo1](https://user-images.githubusercontent.com/78634841/188438206-3834ae26-ca12-47f5-8ee2-5cb2e91ca5b8.png)
+
 
 ## Live Demo
 
